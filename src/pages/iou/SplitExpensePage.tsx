@@ -102,6 +102,8 @@ function SplitExpensePage({route}: SplitExpensePageProps) {
             // When we try to save one split during splits creation and if the data is not identical to the original transaction we should show the error
             setErrorMessage(translate('iou.splitExpenseOneMoreSplit'));
             return;
+
+            
         }
         if (sumOfSplitExpenses > Math.abs(transactionDetailsAmount)) {
             const difference = sumOfSplitExpenses - Math.abs(transactionDetailsAmount);
