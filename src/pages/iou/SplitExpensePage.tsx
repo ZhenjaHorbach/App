@@ -98,6 +98,7 @@ function SplitExpensePage({route}: SplitExpensePageProps) {
                 Navigation.dismissModal();
                 return;
             }
+
             // When we try to save one split during splits creation and if the data is not identical to the original transaction we should show the error
             setErrorMessage(translate('iou.splitExpenseOneMoreSplit'));
             return;
