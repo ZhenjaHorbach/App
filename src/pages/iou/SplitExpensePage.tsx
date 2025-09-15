@@ -92,6 +92,7 @@ function SplitExpensePage({route}: SplitExpensePageProps) {
                 Navigation.dismissModal();
                 return;
             }
+
             // When we try to save splits during editing splits and if the data is identical to the already created transactions we should close the split flow
             if (childTransactions.length && deepEqual(splitFieldDataFromChildTransactions, splitExpenses)) {
                 Navigation.dismissModal();
